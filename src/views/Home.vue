@@ -1,8 +1,13 @@
 <script setup lang="ts">
-import HelloWorld from '../components/HelloWorld.vue';
+// import HelloWorld from '../components/HelloWorld.vue';
+import { useCounterStore } from '../stores/products'
+
+const store = useCounterStore()
+console.log(store);
+
 </script>
 
 <template>
-  <img alt="Vue logo" src="../assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3 + Vuex + Vue Router + TypeScript + Vite" />
+	<code>{{store}}</code>
+  <!-- <HelloWorld msg="Hello Vue 3 + Vuex + Vue Router + TypeScript + Vite" /> -->
 </template>
