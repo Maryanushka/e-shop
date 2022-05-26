@@ -1,5 +1,7 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+let text = 'This is an about page.'
+</script>
 
 <template>
-  <div>This is an about page.</div>
+	<div>{{ text }}</div>
 </template>
