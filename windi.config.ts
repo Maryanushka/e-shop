@@ -15,6 +15,9 @@ export default defineConfig({
 	},
 	theme: {
 		extend: {},
+		fontFamily: {
+			sans: ["'Helvetica'"],
+		},
 	},
 	shortcuts: {
 		// 'light-img': 'block dark:hidden',
