@@ -1,13 +1,10 @@
 import { defineStore } from 'pinia'
 import { Product } from '../interfaces'
 
-export type storeProducts = {
-	products: Product[]
-}
-
 export const useProducts = defineStore('products', {
 	state: () => ({
 		data: [] as Product[],
+		item: {} as Product,
 	}),
 	getters: {
 		getProduct: (state) => {
@@ -17,6 +14,9 @@ export const useProducts = defineStore('products', {
 	actions: {
 		async fetchProducts() {
 			this.data = (await import('../assets/data.json')).default
+		},
+		async fetchProduct(productUid: string) {
+			this.item = (await import('../assets/data.json')).default.filter((el) => el.uid === productUid)[0]
 		},
 	},
 })

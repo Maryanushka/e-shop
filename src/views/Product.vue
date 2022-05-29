@@ -2,13 +2,15 @@
 import { useRoute } from 'vue-router'
 import { useProducts } from '../stores/products'
 
-const products = useProducts()
 const currentRouteId: string = useRoute().params.product.toString()
-console.log(currentRouteId)
+const product = useProducts()
+product.fetchProduct(currentRouteId)
 
-const product = products.getProduct('jordan_why_not')
+// product.fetchProduct(currentRouteId)
+
+// const product = products.getProduct(currentRouteId)
 </script>
 
 <template>
-	<div>{{ product }}</div>
+	<div>{{ product.item }}</div>
 </template>
