@@ -1,16 +1,22 @@
 import { defineStore } from 'pinia'
+import { Product } from '../interfaces'
 
-export const useCounterStore = defineStore({
-	id: 'counter',
+export type storeProducts = {
+	products: Product[]
+}
+
+export const useProducts = defineStore('products', {
 	state: () => ({
-		counter: 0,
+		data: [] as Product[],
 	}),
 	getters: {
-		doubleCount: (state) => state.counter * 2,
+		getProduct: (state) => {
+			return (productUid: string) => state.data.filter((el) => el.uid === productUid)
+		},
 	},
 	actions: {
-		increment() {
-			this.counter++
+		async fetchProducts() {
+			this.data = (await import('../assets/data.json')).default
 		},
 	},
 })

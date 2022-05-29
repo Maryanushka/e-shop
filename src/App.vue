@@ -1,14 +1,14 @@
 <script setup lang="ts"></script>
 
 <template>
-	<div class="content w-screen min-h-screen bg-light-100 flex flex-wrap">
+	<div class="content w-full min-h-screen bg-light-100 flex flex-wrap">
 		<div class="header flex justify-between items-center px-10 py-4 border-b-1 w-full h-[10vh]">
-			<h1 class="text-dark-900 font-semibold text-lg inline-flex">E-shop.</h1>
-			<nav>
+			<router-link to="/" class="text-dark-900 font-semibold text-lg inline-flex">E-shop.</router-link>
+			<!-- <nav>
 				<router-link class="font-serif text-pink-500" to="/">Home</router-link>
 				|
 				<router-link class="font-serif" to="/about">About</router-link>
-			</nav>
+			</nav> -->
 			<button class="cart text-dark-900 p-3 bg-ligh-50 rounded hover:cursor-pointer hover:bg-indigo-100 focus:border-indigo-200 border-solid border-1 border-transparent">
 				<svg class="fill-current w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M96 0C107.5 0 117.4 8.19 119.6 19.51L121.1 32H541.8C562.1 32 578.3 52.25 572.6 72.66L518.6 264.7C514.7 278.5 502.1 288 487.8 288H170.7L179.9 336H488C501.3 336 512 346.7 512 360C512 373.3 501.3 384 488 384H159.1C148.5 384 138.6 375.8 136.4 364.5L76.14 48H24C10.75 48 0 37.25 0 24C0 10.75 10.75 0 24 0H96zM128 464C128 437.5 149.5 416 176 416C202.5 416 224 437.5 224 464C224 490.5 202.5 512 176 512C149.5 512 128 490.5 128 464zM512 464C512 490.5 490.5 512 464 512C437.5 512 416 490.5 416 464C416 437.5 437.5 416 464 416C490.5 416 512 437.5 512 464z" /></svg>
 			</button>

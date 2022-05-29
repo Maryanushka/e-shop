@@ -1,6 +1,7 @@
 [
 	{
 		"id": 1,
+		"uid": "jordan_why_not",
 		"title": "Jordan Why Not",
 		"subTitle": "Baskeball Shoes",
 		"category": "Baskeball",
@@ -18,57 +19,61 @@
 	},
 	{
 		"id": 2,
+		"uid": "lebron_19",
 		"title": "LeBron 19",
 		"subTitle": "Baskeball Shoes",
 		"category": "Baskeball",
 		"sizes": [34,35,36,37,40,41,44,45],
 		"gallery": [
-			"LeBron 19/LeBron_19_1.webp",
-			"LeBron 19/LeBron_19_2.webp",
-			"LeBron 19/LeBron_19_3.webp",
-			"LeBron 19/LeBron_19_4.webp"
+			"LeBron_19/LeBron_19_1.webp",
+			"LeBron_19/LeBron_19_2.webp",
+			"LeBron_19/LeBron_19_3.webp",
+			"LeBron_19/LeBron_19_4.webp"
 		],
-		"thumbnail": "LeBron 19/LeBron_19_1.webp",
+		"thumbnail": "LeBron_19/LeBron_19_1.webp",
 		"price": 154,
 		"description": "LeBron thrives when stakes are high and the pressure’s on. The LeBron 19 harnesses that energy with a locked-in fit and an updated cushioning system. The snug inner sleeve is pulled together by a sculpted overlay that the laces feed through to help prevent the foot from moving inside the shoe. Embedded pods in the tongue and around the collar help reduce weight, keep the ankle aligned, and give players the secure feel and confidence to go all out when the game is on the line.",
 		"genre": "male"
 	},
 	{
 		"id": 3,
+		"uid": "nike_air_force",
 		"title": "Nike Air Force 1",
 		"subTitle": "Women's Shoes",
 		"category": "Baskeball",
 		"sizes": [34,35,36,37,40,41,44,45],
 		"gallery": [
-			"Nike Air Force 1/Nike_Air_Force_1_1.webp",
-			"Nike Air Force 1/Nike_Air_Force_1_2.webp",
-			"Nike Air Force 1/Nike_Air_Force_1_3.webp",
-			"Nike Air Force 1/Nike_Air_Force_1_4.webp"
+			"Nike_Air_Force_1/Nike_Air_Force_1_1.webp",
+			"Nike_Air_Force_1/Nike_Air_Force_1_2.webp",
+			"Nike_Air_Force_1/Nike_Air_Force_1_3.webp",
+			"Nike_Air_Force_1/Nike_Air_Force_1_4.webp"
 		],
-		"thumbnail": "Nike Air Force 1/Nike_Air_Force_1_1.webp",
+		"thumbnail": "Nike_Air_Force_1/Nike_Air_Force_1_1.webp",
 		"price": 135,
 		"description": "Built to fit your foot and designed for comfort, the Nike Air Huarache brings back the street-level favorite. Smooth leather on the upper mixes with super-breathable, perfectly shined neoprene-like fabric for easy styling. The low-cut collar and bootie-like construction keep it sleek and comfy. The iconic heel clip and stripped away branding keep the original '90s running look you love.",
 		"genre": "female"
 	},
 	{
 		"id": 4,
+		"uid": "nike_air_huarache",
 		"title": "Nike Air Huarache",
 		"subTitle": "Women's Shoes",
 		"category": "Baskeball",
 		"sizes": [34,35,36,37,40,41,44,45],
 		"gallery": [
-			"Nike Air Huarache/Nike_Air_Huarache_1.webp",
-			"Nike Air Huarache/Nike_Air_Huarache_2.webp",
+			"Nike Air Huarache/Nike_Air_Huarache_1.jpeg",
+			"Nike Air Huarache/Nike_Air_Huarache_2.jpeg",
 			"Nike Air Huarache/Nike_Air_Huarache_3.webp",
-			"Nike Air Huarache/Nike_Air_Huarache_4.webp"
+			"Nike Air Huarache/Nike_Air_Huarache_4.jpeg"
 		],
-		"thumbnail": "Nike Air Huarache/Nike_Air_Huarache_1.webp",
+		"thumbnail": "Nike Air Huarache/Nike_Air_Huarache_1.jpeg",
 		"price": 135,
 		"description": "The Nike Air Force 1 High Sculpt checks all your boxes. The sculpted collar and removed ankle strap streamline the iconic hoops look. Soft and slightly textured leather gives a premium touch that breaks in beautifully.",
 		"genre": "female"
 	},
 	{
-		"id": 4,
+		"id": 5,
+		"uid": "nike_air_zoom",
 		"title": "Nike Air Zoom",
 		"subTitle": "Women's Shoes",
 		"category": "Baskeball",
@@ -86,6 +91,7 @@
 	},
 	{
 		"id": 6,
+		"uid": "nike_react_vision",
 		"title": "Nike React Vision",
 		"subTitle": "Women's Shoes",
 		"category": "Baskeball",

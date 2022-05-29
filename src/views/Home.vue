@@ -1,9 +1,7 @@
 <script setup lang="ts">
-// import HelloWorld from '../components/HelloWorld.vue';
-import { useCounterStore } from '../stores/products'
-
-const store = useCounterStore()
-console.log(store)
+import { useProducts } from '../stores/products'
+const products = useProducts()
+products.fetchProducts()
 </script>
 
 <template>
@@ -40,7 +38,7 @@ console.log(store)
 
 	<main class="w-[75%] h-[90vh] p-4">
 		<!-- title -->
-		<div class="w-full flex justify-between items-center">
+		<div class="w-full flex justify-between items-center flex-wrap">
 			<h2 class="font-bold text-xl">New Arrivals</h2>
 			<div class="drop-down w-36">
 				<div class="drop-down__title flex items-center justify-between">
@@ -54,21 +52,24 @@ console.log(store)
 		<!-- title -->
 
 		<!-- grid -->
-		<div class="products-grid grid-cols-3 grid gap-4 mt-8">
-			<article class="p-4 border-1 relative flex flex-col product rounded-lg shadow-light-900 hover:shadow-lg cursor-pointer transition-shadow">
-				<h4 class="sub_title text-gray-400 w-full font-normal mb-2">High Speed Sneakers</h4>
-				<div class="title text-dark-400 w-full font-bold text-xl">Jordan Why Not</div>
+		<div class="products-grid grid-cols-3 md:grid-cols-2 grid gap-4 mt-8">
+			<!-- product -->
+			<router-link v-for="product in products.data" :key="product.id" :to="`/${product.uid}`" class="p-4 border-1 relative flex flex-col product rounded-lg shadow-light-900 hover:shadow-lg cursor-pointer transition-shadow">
+				<h4 class="sub_title text-gray-400 w-full font-normal mb-2">{{ product.subTitle }}</h4>
+				<div class="title text-dark-400 w-full font-bold text-xl">{{ product.title }}</div>
 				<div class="image overflow-hidden rounded-lg my-5 h-96">
-					<img class="w-full h-full object-cover object-center" src="../assets/images/shoes/Jordan Why Not/1dfab0ad-91ea-49fa-90a6-d9c0c2441649.webp" alt="" />
+					<img class="w-full h-full object-cover object-center" :src="`src/assets/images/shoes/${product.thumbnail}`" alt="" />
+					<!-- <img class="w-full h-full object-cover object-center" src="../assets/images/shoes/" alt="" /> -->
 				</div>
 				<div class="bottom">
 					<div class="price w-1/2 flex flex-col">
 						<span class="text-gray-400 mb-2">Price</span>
-						<span class="price text-dark-800 font-bold text-2xl">$ 790</span>
+						<span class="price text-dark-800 font-bold text-2xl">$ {{ product.price }}</span>
 					</div>
 				</div>
-			</article>
-			<article class="p-4 border-1 relative flex flex-col product rounded-lg shadow-light-900 hover:shadow-lg cursor-pointer transition-shadow">
+			</router-link>
+			<!-- product -->
+			<!-- <article class="p-4 border-1 relative flex flex-col product rounded-lg shadow-light-900 hover:shadow-lg cursor-pointer transition-shadow">
 				<h4 class="sub_title text-gray-400 w-full font-normal mb-2">High Speed Sneakers</h4>
 				<div class="title text-dark-400 w-full font-bold text-xl">LeBron 19</div>
 				<div class="image overflow-hidden rounded-lg my-5 h-96">
@@ -93,7 +94,7 @@ console.log(store)
 						<span class="price text-dark-800 font-bold text-2xl">$ 790</span>
 					</div>
 				</div>
-			</article>
+			</article> -->
 		</div>
 		<!-- grid -->
 	</main>
