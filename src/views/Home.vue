@@ -59,7 +59,6 @@ products.fetchProducts()
 				<div class="title text-dark-400 w-full font-bold text-xl">{{ product.title }}</div>
 				<div class="image overflow-hidden rounded-lg my-5 h-96">
 					<img class="w-full h-full object-cover object-center" :src="`src/assets/images/shoes/${product.thumbnail}`" alt="" />
-					<!-- <img class="w-full h-full object-cover object-center" src="../assets/images/shoes/" alt="" /> -->
 				</div>
 				<div class="bottom">
 					<div class="price w-1/2 flex flex-col">
@@ -69,32 +68,6 @@ products.fetchProducts()
 				</div>
 			</router-link>
 			<!-- product -->
-			<!-- <article class="p-4 border-1 relative flex flex-col product rounded-lg shadow-light-900 hover:shadow-lg cursor-pointer transition-shadow">
-				<h4 class="sub_title text-gray-400 w-full font-normal mb-2">High Speed Sneakers</h4>
-				<div class="title text-dark-400 w-full font-bold text-xl">LeBron 19</div>
-				<div class="image overflow-hidden rounded-lg my-5 h-96">
-					<img class="w-full h-full object-cover object-center" src="../assets/images/shoes/LeBron 19/c13adec0-4806-4540-b499-66952d851ad7.webp" alt="" />
-				</div>
-				<div class="bottom">
-					<div class="price w-1/2 flex flex-col">
-						<span class="text-gray-400 mb-2">Price</span>
-						<span class="price text-dark-800 font-bold text-2xl">$ 790</span>
-					</div>
-				</div>
-			</article>
-			<article class="p-4 border-1 relative flex flex-col product rounded-lg shadow-light-900 hover:shadow-lg cursor-pointer transition-shadow">
-				<h4 class="sub_title text-gray-400 w-full font-normal mb-2">High Speed Sneakers</h4>
-				<div class="title text-dark-400 w-full font-bold text-xl">Nike Air Huarache</div>
-				<div class="image overflow-hidden rounded-lg my-5 h-96">
-					<img class="w-full h-full object-cover object-center" src="../assets/images/shoes/Nike Air Huarache/as.jpeg" alt="" />
-				</div>
-				<div class="bottom">
-					<div class="price w-1/2 flex flex-col">
-						<span class="text-gray-400 mb-2">Price</span>
-						<span class="price text-dark-800 font-bold text-2xl">$ 790</span>
-					</div>
-				</div>
-			</article> -->
 		</div>
 		<!-- grid -->
 	</main>
