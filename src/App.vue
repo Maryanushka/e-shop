@@ -9,7 +9,7 @@
 				|
 				<router-link class="font-serif" to="/about">About</router-link>
 			</nav> -->
-			<button class="relative cart text-dark-900 p-3 bg-ligh-50 rounded-full hover:cursor-pointer hover:bg-indigo-50 focus:border-indigo-200 border-solid border-1 border-transparent">
+			<router-link to="/basket" class="relative cart text-dark-900 p-3 bg-ligh-50 rounded-full hover:cursor-pointer hover:bg-indigo-50 focus:border-indigo-200 border-solid border-1 border-transparent inline-flex">
 				<svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="256" height="256" viewBox="0 0 256 256" xml:space="preserve">
 					<g transform="translate(128 128) scale(0.72 0.72)" style="">
 						<g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1" transform="translate(-175.05 -175.05000000000004) scale(3.89 3.89)">
@@ -18,7 +18,7 @@
 					</g>
 				</svg>
 				<div class="counter bg-red-700 text-light-100 rounded-full p-1 absolute top-0 right-0 font-light text-[10px] min-w-5 h-5 flex justify-center items-center">1</div>
-			</button>
+			</router-link>
 		</div>
 		<router-view></router-view>
 	</div>

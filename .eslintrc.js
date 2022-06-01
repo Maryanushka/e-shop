@@ -40,6 +40,7 @@ module.exports = {
 				endOfLine: 'auto',
 			},
 		],
+		'vue/multi-word-component-names': 'ignore',
 		// 'arrow-body-style': 'off',
 		// 'prefer-arrow-callback': 'off',
 	},
