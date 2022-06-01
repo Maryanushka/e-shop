@@ -1,9 +1,13 @@
 <script setup lang="ts">
 import { useRoute } from 'vue-router'
 import { useProducts } from '../stores/products'
+import { useCart } from '../stores/cart'
 
 const currentRouteId: string = useRoute().params.product.toString()
 const product = useProducts()
+
+const cart = useCart()
+
 product.fetchProduct(currentRouteId)
 </script>
 
@@ -19,7 +23,7 @@ product.fetchProduct(currentRouteId)
 			<h3 class="font-semibold text-lg mb-3">Description</h3>
 			<p>{{ product.item.description }}</p>
 			<div class="buttons mt-5">
-				<button class="bg-dark-800 border-dark-600 text-light-100 px-8 py-3 rounded-md inline-flex hover:bg-indigo-800 hover:shadow-indigo-500 hover:border-indigo-800 active:bg-indigo-500 border-2 active:border-indigo-600 shadow-lg">
+				<button class="bg-dark-800 border-dark-600 text-light-100 px-8 py-3 rounded-md inline-flex hover:bg-indigo-800 hover:shadow-indigo-500 hover:border-indigo-800 active:bg-indigo-500 border-2 active:border-indigo-600 shadow-lg" @click="cart.data.push(product.item)">
 					<svg class="w-5 h-5 mr-2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="256" height="256" viewBox="0 0 256 256" xml:space="preserve">
 						<g transform="translate(128 128) scale(0.72 0.72)" style="">
 							<g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1" transform="translate(-175.05 -175.05000000000004) scale(3.89 3.89)">

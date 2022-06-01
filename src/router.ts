@@ -3,7 +3,7 @@ import type { RouteRecordRaw } from 'vue-router'
 
 import Home from './views/Home.vue'
 import Product from './views/Product.vue'
-import EshopBasket from './views/EshopBasket.vue'
+import EshopCart from './views/EshopCart.vue'
 
 export const routes: RouteRecordRaw[] = [
 	{
@@ -16,7 +16,7 @@ export const routes: RouteRecordRaw[] = [
 	},
 	{
 		path: '/basket',
-		component: EshopBasket,
+		component: EshopCart,
 	},
 ]
 
